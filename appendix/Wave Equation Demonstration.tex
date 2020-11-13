@@ -1,0 +1,42 @@
+\chapter{Calculation of the wave equation from Maxwell's laws}
+\label{WaveEquation_MaxwellEquations}
+
+The wave equation can be derived from Maxwell's equations (\ref{Gauss' Law for Electric Fields}, \ref{Gauss' Law for Magnetic Fields}, \ref{Faraday's Law} and \ref{Ampere's Law}). First, the curl from equations (\ref{Faraday's Law}) and (\ref{Ampere's Law}) are obtained respectively.
+\begin{eqnarray}
+    \nabla \times (\nabla \times \overrightarrow{\textbf{E}}) = \nabla \times \left( -\frac{\partial \overrightarrow{\textbf{B}}}{\partial t} \right) \nonumber\\
+   -\frac{\partial}{\partial t}(\nabla \times \overrightarrow{\textbf{B}}) = -\mu_0 \epsilon_0 \frac{\partial^2 \overrightarrow{\textbf{E}}}{\partial t^2}
+   \label{FaradayCurl}
+\end{eqnarray}
+
+\begin{eqnarray}
+    \nabla \times (\nabla \times \overrightarrow{\textbf{B}}) = \nabla \times \left( \mu_0 \epsilon_0\frac{\partial \overrightarrow{\textbf{E}}}{\partial t} \right) \nonumber\\
+    \mu_0 \epsilon_0 \frac{\partial}{\partial t}(\nabla \times \overrightarrow{\textbf{E}}) = -\mu_0 \epsilon_0 \frac{\partial^2 \overrightarrow{\textbf{B}}}{\partial t^2}
+    \label{AmpereCurl}
+\end{eqnarray}
+
+By using the identity vector property, it results:
+
+\begin{equation}
+    \nabla \times (\nabla \times \overrightarrow{\textbf{V}}) = \nabla(\nabla \bullet \overrightarrow{\textbf{V}}) - \nabla^2 \overrightarrow{\textbf{V}}
+\end{equation}
+
+Where $\overrightarrow{\textbf{V}}$ is any vector depending on space, or in other works, location. Thus, it can be asserted that:
+
+\begin{equation}
+    \nabla^2 \overrightarrow{\textbf{V}} = \nabla \bullet (\nabla \overrightarrow{\textbf{V}})
+\end{equation}
+
+By replacing this identity into equations (\ref{FaradayCurl}) and (\ref{AmpereCurl}), it can be concluded that:
+
+\begin{eqnarray}
+    \nabla^2 \overrightarrow{\textbf{E}} = \frac{1}{c_0^2}\frac{\partial^2 \overrightarrow{\textbf{E}}}{\partial t^2} \\
+    \nabla^2 \overrightarrow{\textbf{B}} = \frac{1}{c_0^2}\frac{\partial^2 \overrightarrow{\textbf{B}}}{\partial t^2}
+\end{eqnarray}
+
+Where $c_0$ es the propagation speed of the wave, given by:
+
+\begin{equation}
+    c_0 = \frac{1}{\sqrt{\mu_0 \epsilon_0}}
+\end{equation}
+
+Where $\mu_0$ is the medium's magnetic permeability and $\epsilon_0$ the medium's electric permeability. In vacuum, $c_0 = 2.997 \times 10^8 [\frac{m}{s}]$ is the speed of light (Appendix \ref{LightSpeed_FiberOptics}).

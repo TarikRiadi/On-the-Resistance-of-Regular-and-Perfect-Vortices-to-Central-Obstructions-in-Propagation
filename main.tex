@@ -1,0 +1,128 @@
+% Plantilla de memoria Universidad de los Andes
+% para usuarios de pdfLaTeX.
+%
+% Jaime Cisternas, Santiago, junio de 2004, agosto 2010
+%
+% Necesita todos los archivos *.tex llamados en las
+% sentencias \input{} (cap1, cap2,...)
+% ademas de buc.bib y las figuras.
+%
+% El archivo setspace.sty permite especificar el espaciado
+% entre las lineas. Los archivos newapa.sty y newapa.bst
+% especifican el formato de la bibliografia.
+%
+% Para compilar :                    pdflatex memoria
+% Para generar la bibliografia :     bibtex memoria, pdflatex memoria.tex (dos veces)
+
+\documentclass[12pt]{report}
+
+% El archivo siguiente contiene todos los detalles
+% finos del formato de la memoria.
+% No es necesario modificarlo.
+
+\input{preamble}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% LAS SIGUIENTES LINEAS DEBEN SER MODIFICADAS POR EL AUTOR DE LA MEMORIA
+% SI EL TITULO ES MUY LARGO PUEDE SER CORTADO CON \linebreak
+
+\newcommand{\nombreautor}{Tarik Sáez Riadi}
+\newcommand{\mes}{November}
+\newcommand{\anio}{2020}
+\newcommand{\titulo}{On the Resistance of Regular and Perfect Vortices to Central Obstructions in Propagation}
+\newcommand{\nombreprofuno}{Gustavo Luis Funes}
+%\newcommand{\nombreprofdos}{Nombre Representante del Decano}
+%\newcommand{\nombreproftres}{Nombre Profesor Invitado}
+\newcommand{\tituloingeniero}{Electrical Engineer}
+%\newcommand{\codigo}{ING-IN-001/17}
+
+% LAS SIGUIENTES DEFINICIONES TAMBIEN SON NECESARIAS.
+% ES FUNDAMENTAL QUE EL TEXTO ESTE ENCERRADO ENTRE
+% PARENTESIS DE LLAVE.
+
+\newcommand{\resumen}{
+
+El resumen indica en forma sucinta (i) los objetivos de la memoria, (ii) algunos aspectos metodologicos relevantes y (iii) Las principales conclusiones del trabajo, en linea con los objetivos. 
+
+%\linebreak\linebreak
+}
+
+\newcommand{\agradecimientos}{
+
+
+Agradecer cosas aqui...
+
+}
+
+%\newcommand{\dedicatoria}{\it
+%Dedicado a Barney el dinosaurio.
+%}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Por favor coloque todas las definiciones de simbolos a continuacion
+% y no en los archivos de capitulos. Esto evitara la  existencia de
+% multiples definiciones para las mismas palabras.
+
+\newcommand{\mydef}
+	{\stackrel{\mathrm{def}}{=}}
+\newcommand{\e}
+	{\hbox{\large{e}}}
+\newcommand{\mi}
+	{\hbox{\large{i}}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\dd}{\mathrm{d}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\label{start}
+
+% Genera las paginas de titulo, copyright, resumen,
+% agradecimientos, dedicatoria, indices,...
+
+% No es necesario modificar
+
+\input{first_pages}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{chapters/c01}    % Introducción
+
+\input{chapters/c02}    % Objetivos
+
+\input{chapters/c03}    % Metodología
+
+\input{chapters/c04}    % Resultados
+
+\input{chapters/c05}    % Conclusiones y Trabajo Futuro
+
+%\input{chapters/c06}    % Conclusiones y Trabajo Futuro
+
+% Ingenieros prefieren la bibliografia antes que los anexos
+
+\cleardoublepage
+
+\addcontentsline{toc}{chapter}{Bibliography}
+
+\bibliographystyle{styles/newapa}
+\bibliography{buc}
+
+\appendix % seguido de archivos de apendices
+
+\cleardoublepage
+
+% Escribe 'Anexos' en el Indice General
+\addcontentsline{toc}{chapter}{Appendices}
+\input{appendix/FiberOptics}
+\input{appendix/Speed of Light Fiber Optics}
+\input{appendix/Wave Equation Demonstration}
+\input{appendix/Additional Results}
+\input{appendix/MATLAB Scripts}
+
+
+\label{end}
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

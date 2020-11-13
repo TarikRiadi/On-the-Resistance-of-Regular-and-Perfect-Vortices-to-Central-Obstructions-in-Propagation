@@ -1,0 +1,103 @@
+% Paginas de titulo, derechos de autor y otras mas.
+
+% Jaime Cisternas, julio 2004, agosto 2010
+
+% declaracion especifica de pdfLaTeX
+% permite incluir figuras con \includegraphics[...]{figurename}
+\DeclareGraphicsExtensions{.jpg,.pdf,.mps,.png}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+  \pagenumbering{roman}
+% \setcounter{page}{1}
+
+% Escribe la pagina de titulo, incluyendo el autor y la facultad
+
+  \thispagestyle{empty}
+  \textsc{
+  \vspace*{0cm}
+  \begin{center}
+    \Large
+     Universidad de los Andes \\
+     Facultad de Ingeniería y Ciencias Aplicadas\\
+  \end{center}
+     \vspace{1cm}
+  \begin{center}
+     \includegraphics[angle=0,height=5cm]{images/Isotipo_Color.png}
+  \end{center}
+     \vspace{1cm}
+  \begin{center}
+     \Large
+     \titulo
+  \end{center}
+  \vspace{1.25cm}
+  \begin{center}
+    \Large
+    \nombreautor
+  \end{center}
+  \vspace{1.25cm}
+  \begin{center}
+    In partial fulfillment of the requirements for the degree of \\
+    %Engineer in
+    \tituloingeniero \\
+    \vspace{1cm}
+    Thesis Advisor: \nombreprofuno \\
+    \vspace{0.5cm}
+    \mes\ \anio
+    %Santiago, \mes\ \anio
+  \end{center}
+  }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Espaciado entre lineas
+\onehalfspacing
+%\doublespacing
+
+% Hace pagina de derechos de autor
+
+\cleardoublepage
+\thispagestyle{empty}
+%\vspace*{0in}
+\begin{center}
+\copyright\ \nombreautor\ \anio \\
+All rights reserved.
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Genera resumen leyendo definicion de resumen
+
+\cleardoublepage
+\refstepcounter{dummy} \addcontentsline{toc}{section}{Abstract}
+\begin{center} \Large \textbf{Abstract} \end{center}
+\resumen
+% Genera agradecimientos leyendo definicion de agradecimientos
+
+\cleardoublepage \addcontentsline{toc}{section}{Acknowledgements}
+\begin{center} \Large \textbf{Acknowledgements} \end{center}
+\agradecimientos
+
+% Genera dedicatoria
+
+%\cleardoublepage \vspace*{1.5in}
+%\begin{flushright} \dedicatoria \end{flushright}
+
+% Produce indice general, listas de figuras y de tablas
+
+\cleardoublepage
+\tableofcontents
+\cleardoublepage
+\listoffigures
+\cleardoublepage
+\listoftables
+\cleardoublepage
+
+\normalsize
+\pagenumbering{arabic}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

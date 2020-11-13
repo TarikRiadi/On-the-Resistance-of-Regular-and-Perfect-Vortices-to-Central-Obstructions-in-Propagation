@@ -1,0 +1,26 @@
+\chapter{Comparing the speed of light within vacuum, air and fiber optics}
+\label{LightSpeed_FiberOptics}
+
+The refractive index $n$ of any material or medium is defined by the following equation.
+
+\begin{equation}
+    n = \frac{c}{v_{ph}}
+    \label{eq:Refraction_Index_and_Speed_in_Medium}
+\end{equation}
+
+Here, $c$ represents the speed of light in vacuum, which is 299,792,458 m/s (approximately 300,000 km/s or 186,000 mi/s) \cite{Speed_of_Light:NIST} and $v_{ph}$ is the speed of light in the second medium or material. 
+
+The refractive index of a typical optical fiber is $n = 1.444$ (see appendix \ref{FiberOptics}). By replacing this number in equation (\ref{eq:Refraction_Index_and_Speed_in_Medium}) and solving for $v_{ph}$, one can conclude that the speed of light inside an optical fiber has a theoretical maximum of 207,612.5 km/s (128,720 mi/s).
+
+\begin{eqnarray}
+    1.444 &=& \frac{299,792,458\left[\frac{m}{s}\right]}{v_{ph}} \\
+    v_{ph} &=& 207,612,505.54 \left[\frac{m}{s}\right]
+    \label{eq:Speed_of_Light_in_Fiber_Optics}
+\end{eqnarray}
+
+Comparatively, one can conclude that the speed of light is approximately 31\% slower through optical fiber than through vacuum. Furthermore, considering the refractive index of air, which is 1.00029 \cite{Hecht:Refractive_Index}, by dividing the speed of light by this refractive index, we can know that the speed of light on air is 299,705,543.39 m/s (186,226 mi/s). Because the difference between the speed of light in vacuum and air is small within this context, this 31\% speed difference is also valid when comparing fiber optic to air.
+
+\begin{eqnarray}
+    \frac{207,612,505.54}{299,792,458} &=&  0.6925 \nonumber\\
+    \frac{207,612,505.54}{299,705,543} &=& 0.6927 \nonumber
+\end{eqnarray}

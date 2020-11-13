@@ -1,0 +1,45 @@
+\select@language {spanish}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Learning Analytics en el proceso al \IeC {\'e}xito del estudiante}}{5}{figure.2.1}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Sistema para Learning Analytics de la Universidad de Purdue}}{6}{figure.2.2}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Sistema Student Explorer de la Universidad de Michigan}}{7}{figure.2.3}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Proceso de Learning Analytics}}{8}{figure.2.4}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Modelo de referencia de Learning Analytics}}{9}{figure.2.5}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Modelo entidad-relaci\IeC {\'o}n de perfiles}}{17}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Modelo entidad-relaci\IeC {\'o}n de las evaluaciones}}{18}{figure.3.2}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Modelo entidad-relaci\IeC {\'o}n del consumo de datos}}{19}{figure.3.3}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Tecnolog\IeC {\'\i }as de Cliente-Servidor}}{25}{figure.3.4}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Vista de Contexto del sistema}}{28}{figure.3.5}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Vista F\IeC {\'\i }sica del sistema}}{30}{figure.3.6}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Vista Din\IeC {\'a}mica del sistema}}{33}{figure.3.7}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Flujo de acceso a datos modelados}}{35}{figure.3.8}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Secuencia en Vista Din\IeC {\'a}mica del sistema}}{37}{figure.3.9}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Vista Est\IeC {\'a}tica del sistema}}{39}{figure.3.10}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Interacci\IeC {\'o}n de modelos con base de datos no-relacional}}{41}{figure.3.11}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Vista Est\IeC {\'a}tica de la Aplicaci\IeC {\'o}n Cliente}}{42}{figure.3.12}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Mock de vista sem\IeC {\'a}foro de curso}}{44}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Flujo de vistas del prototipo}}{47}{figure.4.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Vista de configuraci\IeC {\'o}n de grupo principal}}{48}{figure.4.3}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Ejemplo de planilla de notas de Google Sheets}}{49}{figure.4.4}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Vista de configuraci\IeC {\'o}n de grupo modulo}}{50}{figure.4.5}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Vista de reporter\IeC {\'\i }a tipo grilla}}{51}{figure.4.6}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Vista de reporter\IeC {\'\i }a tipo gr\IeC {\'a}fico de l\IeC {\'\i }neas para un tipo de evaluaci\IeC {\'o}n}}{52}{figure.4.7}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Vista de reporter\IeC {\'\i }a tipo gr\IeC {\'a}fico de dispersi\IeC {\'o}n para la comparaci\IeC {\'o}n de evaluaciones}}{53}{figure.4.8}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Vista de Dashboard de reportes}}{54}{figure.4.9}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {C.1}{\ignorespaces Vista de inicio}}{77}{figure.Alph3.1}
+\contentsline {figure}{\numberline {C.2}{\ignorespaces Vista de CRUD de per\IeC {\'\i }odos}}{78}{figure.Alph3.2}
+\contentsline {figure}{\numberline {C.3}{\ignorespaces Vista de CRUD de usuarios}}{78}{figure.Alph3.3}
+\contentsline {figure}{\numberline {C.4}{\ignorespaces Vista formulario de creaci\IeC {\'o}n de usuario}}{79}{figure.Alph3.4}
+\contentsline {figure}{\numberline {C.5}{\ignorespaces Vista de CRUD de cursos}}{79}{figure.Alph3.5}
+\contentsline {figure}{\numberline {C.6}{\ignorespaces Vista de CRUD de secciones}}{80}{figure.Alph3.6}
+\contentsline {figure}{\numberline {C.7}{\ignorespaces Vista de CRUD de secci\IeC {\'o}n}}{80}{figure.Alph3.7}
+\contentsline {figure}{\numberline {C.8}{\ignorespaces Vista de CRUD de grupos}}{81}{figure.Alph3.8}
+\contentsline {figure}{\numberline {C.9}{\ignorespaces Vista de reporter\IeC {\'\i }a tipo grilla en modo lista}}{81}{figure.Alph3.9}
+\contentsline {figure}{\numberline {C.10}{\ignorespaces Vista de reporter\IeC {\'\i }a de aprobaci\IeC {\'o}n de m\IeC {\'o}dulos}}{82}{figure.Alph3.10}
