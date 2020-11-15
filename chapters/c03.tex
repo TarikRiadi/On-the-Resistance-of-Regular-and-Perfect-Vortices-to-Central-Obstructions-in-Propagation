@@ -14,12 +14,12 @@ The simulation is based on the optical setup shown in figure (\ref{fig:Simulated
 \end{figure}
 
 \newpage
-There is a myriad of telescopes, among the which the Schmidt-Cassegrain particularly stands out. It is one of the most used ones because it allows wide apertures devices to be built within a short cylinder (compared with its focal-length-equivalent refractor). The disadvantage that the Schmidt-Cassegrain encompasses, is its central obstruction, that serves as the resting location for the mirror that reflects and focuses incoming light towards the eyepiece ((i) in figure (\ref{fig:Simulated_Experiment})). For distant targets, this obstruction is inconsequential due to the parallax effect; nevertheless, for shorter distances, such as the ones that might be used in a laboratory, it becomes an obstacle for a vortex, as it can block its central singularity.
+There is a myriad of telescopes, among the which the Schmidt-Cassegrain particularly stands out. It is one of the most used ones because it allows wide apertures devices to be built within a short cylinder (compared with its focal-length-equivalent refractor). The disadvantage that the Schmidt-Cassegrain encompasses, is its central obstruction ((g) in figure (\ref{fig:Simulated_Experiment})), that serves as the resting location for the mirror that reflects and focuses incoming light towards the eyepiece ((f) in figure (\ref{fig:Simulated_Experiment})). For distant targets, this obstruction is inconsequential due to the parallax effect; nevertheless, for shorter distances, such as the ones that might be used in a laboratory, it becomes an obstacle for a vortex, as it can block its central singularity.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=7cm]{images/c03/Cassegrain-Obstruction.png}
-    \caption{Schmidt-Cassegrain telescope like the one available in the FICA laboratory. The obstruction is colored in light yellow \cite{Schmidt-Cassegrain_Pics}.}
+    \caption{Schmidt-Cassegrain telescope like the one available in the FICA laboratory. The obstruction is colored in light yellow \protect\cite{Schmidt-Cassegrain_Pics}.}
     \label{fig:Schmidt-Cassegrain-Obstruction}
 \end{figure}
 
@@ -78,8 +78,10 @@ All of the main function's arguments are listed below. Once again, if a more in-
     \item \textit{obstruction\_radius}: Obstruction radius in [px]. Values higher than 100 are not recommended.
     \item \textit{sigma} ($\sigma$): Standard deviation of the 2D Gaussian that generates regular vortices. It is used to control the size of the Gaussian, where larger values return larger beams.
     \item \textit{Rpx}: Aperture size in [px]. The main function converts this measure to [mm] internally. The expected value is 764 [px]; however, under a slightly different scenario (to be presented later on) it can be set at 500 [px].
-    \item \textit{N}: Number of Bessel's zeroes and number of rings. Values expected here are integers between 30 and 60.
+    \item \textit{N}: Number of Bessel's zeroes\footnotemark{} and number of rings. Values expected here are integers between 30 and 60.
 \end{enumerate}
+
+\footnotetext{The function used to calculate the Bessel function's roots is \textit{besselzero.m} \cite{besselzero-MathWorks}. The function can be seen in appendix (\ref{MATLAB_Scripts}).}
 
 Arguments (i) and (j) were inherited from Bravo's undergraduate thesis \cite{Thesis_Herbert:2020}. He established the acceptable values' range for aperture and number of rings, in order to create a perfect vortex, by following the vortex's definition: a beam with a main ring that concentrates most of the beam's light intensity and a black center region, completely absent of light. He confirmed this by taking multiple intensity profiles on the vortices produced by these values.
 

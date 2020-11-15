@@ -48,10 +48,11 @@ A simple illustration of this phenomenon can be seen in figure (\ref{fig:u_param
 \begin{figure}[htbp]
     \centering
     \fbox{\includegraphics[width=8cm, height = 5.5cm]{images/c02/EM Waves/Wave_u_parameter.PNG}}
-    \caption{Displacement $u$ of an arbitrary point as a wave travels through a rope in space and time \cite{u_parameter_explanation-figure}.}
+    \caption{Displacement $u$ of an arbitrary point as a wave travels through a rope in space and time \protect\cite{u_parameter_explanation-figure}.}
     \label{fig:u_parameter_explanation}
 \end{figure}
 
+\newpage
 The wave equation describes this relationship better, and can be deduced from Ampère and Faraday's laws (refer to appendix \ref{WaveEquation_MaxwellEquations} for the mathematical demonstration). It describes the propagation of an EM wave through a medium, including vacuum.
 
 \begin{equation}
@@ -68,6 +69,7 @@ Do note that the Laplacian is noted by the symbol $\nabla$ (read \textit{nabla})
     \label{Laplacian}
 \end{equation}
 
+\newpage
 Then, by rewriting equation (\ref{Wave_Equation}) in terms of equation (\ref{Laplacian}), the following equation results.
 
 \begin{equation}
@@ -82,7 +84,7 @@ This equation shows that waves move in the same way of its shape, this means, in
 \begin{figure}[htbp]
     \centering
     \fbox{\includegraphics[scale=0.45]{images/c02/EM Waves/Light_EM_Wave.png}}
-    \caption{Representation of a light wave propagating through space showing both of its fields, its wavelength ($\lambda$) and direction (black arrow) \cite{Light_EM_Wave_Figure}. Its direction is given by the cross-product $\overrightarrow{\textbf{E}} \times \overrightarrow{\textbf{B}}$.}
+    \caption{Representation of a light wave propagating through space showing both of its fields, its wavelength ($\lambda$) and direction (black arrow) \protect\cite{Light_EM_Wave_Figure}. Its direction is given by the cross-product $\protect\overrightarrow{\textbf{E}} \times \protect\overrightarrow{\textbf{B}}$.}
     \label{fig:Light_EM_Wave}
 \end{figure}
 
@@ -93,7 +95,7 @@ Classical physics tell us that in all waves, frequency and wavelength are relate
 \begin{figure}[htbp]
     \centering
     \fbox{\includegraphics[width=11cm]{images/c02/EM Waves/EM_Spectrum.jpg}}
-    \caption{EM Spectrum \cite{EM_Spectrum-Figure}. The visible spectrum is encompassed between 390 and 780 [nm] although it is usually approximated to the range 400-700 [nm].}
+    \caption{EM Spectrum \protect\cite{EM_Spectrum-Figure}. The visible spectrum is encompassed between 390 and 780 [nm] although it is usually approximated to the range 400-700 [nm].}
     \label{fig:EM_Spectrum}
 \end{figure}
 
@@ -109,17 +111,17 @@ Classical physics tell us that in all waves, frequency and wavelength are relate
     Blue           & 492-455                       & 610-659                  \\ \hline
     Violet        & 455-390                       & 659-769                  \\ \hline
     \end{tabular}
-    \caption{Wavelength, in nanometers, and frequency, in terahertz, for some colors of the visible spectrum \cite{Hecht_Optics-Visible_Light}. There is no international standard regarding the accuracy of these ranges are, as some variations of the upper and lower limits of the visible spectrum vary within the tens of nanometers.}
+    \caption{Wavelength, in nanometers, and frequency, in terahertz, for some colors of the visible spectrum \protect\cite{Hecht_Optics-Visible_Light}. There is no international standard regarding the accuracy of these ranges are, as some variations of the upper and lower limits of the visible spectrum vary within the tens of nanometers.}
     \label{tab:VisibleLight}
 \end{table}
 
 \newpage
-It is useful to distinguish what we perceive as light, as what might seem as a source of unique color, can actually be made out of multiple ones. For instance, sources like our Sun or a light bulb produce white light\footnote{The Sun looks yellow from Earth because of the scattering effect that our blue atmosphere has on ``rejecting'' blue and violet waves. However, this can be an extensive topic, worthy of its own.}, which is a combination of all colors, or wavelengths. On the other hand, monochromatic light are waves that share the same wavelength; for example, laser light is monochromatic. Therefore, in essence, although light can appear to be made out of multiple-frequency-waves, a single light wave is monochromatic.
+It is useful to distinguish what we perceive as light, as what might seem as a source of unique color, can actually be made out of multiple ones. For instance, sources like our Sun or a light bulb produce white light\footnote{The Sun looks yellow (instead of white) from Earth because of the scattering effect that our blue atmosphere has on ``rejecting'' blue and violet waves. However, this can be an extensive topic, worthy of its own.}, which is a combination of all colors, or wavelengths. On the other hand, monochromatic light are waves that share the same wavelength; for example, laser light is monochromatic. Therefore, in essence, although light can appear to be made out of multiple-frequency-waves, a single light wave is monochromatic.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=6cm]{images/c02/EM Waves/Prism.PNG}
-    \caption{Chromatic dispersion in a prism as a white light beam enters it. Sir Isaac Newton discovered that a sunbeam impinging on a prism at a certain angle can disperse the colors ``contained'' in this beam and show them separately in the late XVII century.}
+    \caption{Chromatic dispersion in a prism as a white light beam enters it. Sir Isaac Newton discovered in the late XVII century that a sunbeam impinging on a prism at a certain angle can disperse the colors composing in this beam and show them separately.}
     \label{fig:Prism}
 \end{figure}
 
@@ -140,52 +142,7 @@ Where $A_0$ is the amplitude, given by $A_0 = A/r$, and $r = x^2 + y^2 + z^2$, $
     U_0(r) = A_0e^{i\phi}
 \end{equation}
 
-%Nótese que la dependencia de la ecuación cambia de $R$ a $r$ si se asumen dos cosas. La primera es que, si bien para poder determinar la posición de una onda precisamos del tiempo, la misma onda puede ser generada en cualquier instante de tiempo. Por ejemplo, si se prende y apaga una fuente de luz, como una ampolleta o láser, en dos momentos distintos (por ejemplo, en días diferentes) la luz emitida por estas fuentes tienen el mismo comportamiento en ambos casos. De esta forma, la forma y comportamiento no dependen directamente del tiempo. La segunda es que, dado que el comportamiento no depende del tiempo, se puede fijar de la misma forma uno de los tres ejes sobre el cual la onda siempre se propaga. Convenientemente, este eje puede ser el eje óptico, que es el resultado de pensar en la propagación de la onda desde el plano en $R$ dado por $z = 0$. De esta forma, se puede reducir la ecuación de onda independientemente del tiempo, y redefiniendo $z$ como la distancia de propagación de la onda desde la fuente o instante de tiempo dados.
-
-%\section{Polarización}
-%\label{c2:Polarization}
-
-%The beams used for traditional optical communications are not simple lasers being transmitted, on and off, through an optical fiber. Instead, they are special shapes achieved by inducing momentum on simple beams. However, before jumping to how this momentum is induced, knowing the types of polarization can ease the way towards understanding why light behaves how it does under these special forces 
-
-%Para poder entender las formas en que la luz puede expresar momento, es útil entender un poco del fenómeno de la polarización.
-
-%La polarización de una onda EM es la orientación, expresada como el ángulo del campo eléctrico ($\overrightarrow{\textbf{E}}$) con respecto a un eje de referencia cuyo orígen coincide con el del eje óptico ($z$).
-
-%\begin{figure}[htbp]
-%    \centering
-%    \fbox{\includegraphics[width=12cm]{images/c02/Polarization/Linearly_Polarized_Light.png}}
-%    \caption{Ilustración de polarización lineal.}
-%    \label{fig:Linear_Polarization}
-%\end{figure}
-
-%Existen tres tipos de polarización: lineal, circular y elíptica (Véase figura \ref{fig:Types_of_Polarization}). Adicionalmente, existe la luz no polarizada, que consiste de varias ondas con distintas polarizaciones, por lo que el conjunto no tiene una definida. Un ejemplo de luz no polarizada es la luz blanca (Véase figura \ref{fig:Unpolarized_Light}), aquella irradiada por el sol o una ampolleta, que contiene varias ondas a distintas polarizaciones y longitudes de onda. 
-
-%\begin{figure}[htbp]
-%    \centering
-%    \fbox{\includegraphics[width=12cm]{images/c02/Polarization/Types_of_Polarization.jpg}}
-%    \caption{Tipos de polarización: lineal (izquierda), circular (centro) y elíptica (derecha). En esta ilustración se obvia, por simplicidad, el campo electromagnético $\overrightarrow{\textbf{B}}$, que es perpendicular al campo eléctrico $\overrightarrow{\textbf{E}}$, ilustrado en rojo \cite{Types_of_Polarization_Figure}.}
-%    \label{fig:Types_of_Polarization}
-%\end{figure}
-
-%\begin{figure}[htbp]
-%    \centering
-%    \fbox{\includegraphics[width=12cm]{images/c02/Polarization/Unpolarized_Light.png}}
-%    \caption{Ilustración de luz no polarizada \cite{Unpolarized_Light_Figure}.}
-%    \label{fig:Unpolarized_Light}
-%\end{figure}
-
-%La polarización, en cualquier caso, se puede entender como el vector resultante de una composición de dos vectores: en $\hat{x}$ y en $\hat{y}$. De esta forma, cualquier tipo de polarización puede ser representada como una función de estas dos componentes, sólo cambiando la magnitud de cada una. Para los casos de la polarización circular y elíptica, las magnitudes varían en el tiempo.
-
-%Ahora, ¿Qué tiene que ver la polarización con el momento de una onda EM? Como bien se dijo en la sección anterior, una onda EM puede transportar momento. Hasta antes del año 1992, se sabía que la luz transporta un momento lineal equivalente a $\hbar k_0$ por fotón, y si está polarizada circularmente, un momento de giro angular (SAM, por sus siglas en inglés derivadas de \textit{Spin Angular Momentum}) de $\pm \hbar$ por fotón. Expresado de otra forma, una onda de luz polarizada linealmente no transporta SAM, pero una onda polarizada circularmente sí.
-
-%\begin{figure}[htbp]
-%    \centering
-%    \fbox{\includegraphics{images/c02/OAM/SAM.png}}
-%    \caption{Ilustración de una onda EM polarizada circularmente que posee SAM, mostrando sólo el campo eléctrico, y su visualización espacial.}
-%    \label{fig:SAM}
-%\end{figure}
-
-\section{Optical vortices with Orbital Angular \\Momentum}
+\section{Optical vortices with Orbital Angular Momentum}
 \label{c2:OAM}
 
 In 1992 Allen et. al. published a paper showing that helically phased beams naturally carry an orbital angular momentum (OAM) that is $\ell$ times greater than the spin angular momentum's $\hbar$\footnote{Planck's constant, which is equal to $6.62607015\times 10^{-34}$ $[J\bigcdot s]$.} per photon \cite{Allen_OAM:1992}. Before this discovery, it was known that light can exert momenta upon the surfaces where it bounces off, pushing (linear momentum) or spinning them (spin angular momentum, or SAM). What is more, \textit{linear momentum} carries a momentum of $\hbar k_0$ per photon and, if the light beam is circularly polarized, a SAM of $\pm \hbar$ per photon. Simply put, this publication explained that light can also twist the receiving end \cite{Yao-Padgett:2011}.
@@ -195,7 +152,7 @@ Alison Yao and Miles Padgett exemplified these momenta in their work on OAM, to 
 \begin{figure}[htbp]
     \centering
     \fbox{\includegraphics[width=10cm]{images/c02/OAM/SAM_OAM.png}}
-    \caption{Comparison between SAM and OAM \cite{Wikimedia:SAM_vs_OAM}}
+    \caption{Comparison between SAM and OAM \protect\cite{Wikimedia:SAM_vs_OAM}}
     \label{fig:SAM_vs_OAM}
 \end{figure}
 
@@ -225,16 +182,27 @@ One of the most remarkable features of beams that carry OAM (often referred to a
     \label{fig:Example_OAM}
 \end{figure}
 
-The number $\ell$, the factor that amplifies the momentum of OAM with respect to SAM, is designated \textit{topological charge} or \textit{state}. This number not only translates into the number of ``helices'' the corkscrew-like beam will have, but also correlates to its radial size and, as a consequence, to the size of the phase singularity. A representation of these beams can be seen in figure (\ref{fig:Different_OAM_Beams}). In contrast, \textit{perfect vortices} are a special type whose size, in theory, does not correlate to the state of the OAM; in other words, they are constant in size as they propagate \cite{Thesis_Herbert_PerfectVortices:2020}.
+The number $\ell$, the factor that amplifies the momentum of OAM with respect to the SAM, is designated \textit{topological charge} or \textit{state}. This number not only translates into the number of ``helices'' the corkscrew-like beam will have, but also correlates to its radial size and, as a consequence, to the size of the phase singularity. A representation of these beams in the midst of propagation can be seen in figure (\ref{fig:Different_OAM_Beams}).
+
+%In contrast, \textit{perfect vortices} are a special type whose size, in theory, does not correlate to the state of the OAM; in other words, they are constant in size as they propagate \cite{Thesis_Herbert_PerfectVortices:2020}.
 
 \begin{figure}[htbp]
     \centering
     \fbox{\includegraphics[width=9.5cm]{images/c02/OAM/OAM_topological_charge.PNG}}
-    \caption{OAM beams of topological charges: (a) $\ell = 0$, (b) $\ell = 1$, (c) $\ell = 2$ and (d) $\ell = 3$. These illustrations show how OAM states differ from each other, disregarding their projections onto a surface \cite{Yao-Padgett:2011}.}
+    \caption{OAM beams of topological charges: (a) $\ell = 0$, (b) $\ell = 1$, (c) $\ell = 2$ and (d) $\ell = 3$. These illustrations show how OAM states differ from each other, disregarding their projections onto a surface \protect\cite{Yao-Padgett:2011}.}
     \label{fig:Different_OAM_Beams}
 \end{figure}
 
-Regular OAM beams tend to grow in size and change in shape as they travel from the source towards infinity. At the very beginning, the beam does not resemble a beam like that of figure (\ref{fig:Example_OAM}), however as the distance $z$ increases, the more it resembles it. The beam will not only take this shape, but will also keep growing in radial size, which also means that its intensity fades away as the region the same light covers grows. As the beam approaches infinity, its shape will be even more static and its growth will also slow significantly. Perfect OAMs also evolve along the propagation distance, yet they don't grow in size. These phenomena will be further explained in section (\ref{c2:Near and Far Field Propagation}).
+There is another type of OAM: perfect vortices. They differ from regular ones in that their size does not correlate to the state of the OAM; furthermore, their size is constant throughout the propagation. Their intensity is defined by equation (\ref{eq:perfect_vortex_intensity}) \cite{Thesis_Herbert_PerfectVortices:2020}. 
+
+\begin{equation}
+    g_\ell (\rho,\theta) = \delta (\rho - \rho_0)e^{i\ell\theta}
+    \label{eq:perfect_vortex_intensity}
+\end{equation}
+
+Where $\rho$ and $\theta$ are the polar coordinates of the beam's transversal section, $\delta$ is Dirac's delta function and $\rho_0$ the vortex's radius \cite{Kotlyar:16}.
+
+On the other hand, regular OAM beams tend to grow in size and change in shape as they travel from the source towards infinity. At the very beginning, the beam does not resemble a beam like that of figure (\ref{fig:Example_OAM}), however as the distance $z$ increases, the more it resembles it. The beam will not only take this shape, but will also keep growing in radial size, which also means that its intensity fades away as the region the same light covers grows. As the beam approaches infinity, its shape will be even more static and its growth will also slow significantly.
 
 A feature that both regular and perfect OAM beams share, is their intensity distribution. The lasers commonly used in optics have a Gaussian distribution, that is, very bright at its mean $\mu$ and fades at a rate related to its standard deviation $\sigma$. As figure (\ref{fig:Example_OAM}) shows, OAM beams can have rings. The intensity distribution, following that of a Gaussian, tends to concentrate most of the intensity in the smaller, most centered ring (also referred to as the main ring). The surrounding rings follow a Gaussian distribution, considering the ``skips'' they have between them. This is better illustrated in the following figure.
 
@@ -260,7 +228,7 @@ A feature that both regular and perfect OAM beams share, is their intensity dist
 \subsection{Making an OAM beam}
 \label{c2:Making an OAM beam}
 
-There are three commonly used methods to induce orbital angular momentum on a light beam. The first one is by combining Hermite-Gauss (HG) modes to generate Laguerre-Gaussian (LG) ones using a laser. Another one, is by using a spiral phase plate whose optical thickness varies linearly with the azimuthal angle. The final method consists of using a spatial light modulator (SLM) to project a \textit{phase mask}\footnote{Also referred to as \textit{hologram} or \textit{interference pattern plate}.} that sits in front of a typical laser beam and induces OAM on it. The phase mask is generated by the Laguerre-Gauss equation (\ref{Laguerre-Gauss Equation}) \cite{Anguita:08}.
+There are three commonly used methods to induce orbital angular momentum on a light beam. The first one is by combining Hermite-Gauss (HG) modes to generate Laguerre-Gaussian (LG) ones using a laser. Another one, is by using a spiral phase plate whose optical thickness varies linearly with the azimuthal angle. The final method consists of using a spatial light modulator (SLM)\footnote{An SLM is a device that allows one to modulate a beam of light through a projection, which can be controlled by a computer. It uses the same working principle of a transparency projection.} to project a \textit{phase mask}\footnote{Also referred to as \textit{hologram} or \textit{interference pattern plate}.} that sits in front of a typical laser beam and induces OAM on it. The phase mask is generated by the Laguerre-Gauss equation (\ref{Laguerre-Gauss Equation}) \cite{Anguita:08}.
 
 \begin{figure}[htbp]
     \centering
@@ -311,7 +279,7 @@ Where $\lambda$ is the wavelength and $n$ is the medium's refractive index.
 \begin{figure}[htbp]
     \centering
     \fbox{\includegraphics[width=8.5cm]{images/c02/OAM/GaussianBeamWaist.png}}
-    \caption{Illustration of the Gaussian beam's waist \cite{GaussianBeamParameters}.}
+    \caption{Illustration of the Gaussian beam's waist \protect\cite{GaussianBeamParameters}.}
     \label{fig:Gaussian_Beam_Waist}
 \end{figure}
 
@@ -320,9 +288,38 @@ As it can be seen, the two input arguments of equation (\ref{Laguerre-Gauss Equa
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=9cm]{images/c02/OAM/OAM_given_L_and_P.png}
-    \caption{Resulting optical vortices for different $\ell$ and $p$ values for equation (\ref{Laguerre-Gauss Equation}) \cite{OAM_states_Carbone:2013}.}
+    \caption{Resulting optical vortices for different $\ell$ and $p$ values for equation (\ref{Laguerre-Gauss Equation}) \protect\cite{OAM_states_Carbone:2013}.}
     \label{fig:OAMs_given_L_and_P}
 \end{figure}
+
+\newpage
+The phase masks created by this equation correspond to the complex field of equation (\ref{Light Equation}) (See figure (\ref{fig:lighteq_to_images})). As the light equation of these beams is propagated, its intensity and complex fields are altered (for more detail on how exactly they are altered, refer to section (\ref{c2:Near and Far Field Propagation}). The intensity field of the same light equation is what we are able to see with our own eyes directly; in this case, this is the OAM beam, like the ones shown in figure (\ref{fig:Example_OAM}).
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=11cm]{images/c02/OAM/Light_Equation_Images.png}
+    \caption{Relationship between the terms of the light equation (fields) and their respective images. The phase mask corresponds to the complex field and the OAM corresponds to the intensity field.}
+    \label{fig:lighteq_to_images}
+\end{figure}
+
+\newpage
+Hence, what essentially plays out is that one projects a phase mask through an SLM controlled by a computer onto a Gaussian laser beam, with the resulting beam being an OAM beam.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=10cm]{images/c02/OAM/PhaseMasks_to_OAM.png}
+    \caption{Relationship between the phase masks projected by the SLM and the resulting OAMs, or intensity fields.}
+    \label{fig:PM2OAM}
+\end{figure}
+
+For the particular case of perfect OAMs, their phase mask is created through the Optimal Phase Element method. It seeks to concentrate most of the beam's intensity onto the main ring, given by equation ().
+
+\begin{equation}
+    U(r,\varphi) = sgn(J_\ell(\alpha r))e^{il\Phi(r,\varphi)}
+\end{equation}
+
+Where $r = \sqrt{x^2 + y^2}$ and $\Phi(r,\varphi) = circ \left( \frac{r}{R} \right) il\varphi$; $R$ is the circular aperture's radius and $J_\ell$ is the first order Bessel function of order $\ell$. Finally, $circ \left( \frac{r}{R} \right)$ is 1 when r is less than or equal to the aperture R, and is 0 if its greater.
+
 
 \newpage
 \section{Near-Field and Far-Field Propagation Models}
@@ -335,7 +332,7 @@ The reason to distinguish between both near and far field scenarios, come from o
 \begin{figure}[htbp]
     \centering
     \fbox{\includegraphics[width=10cm]{images/c02/Propagation/Fresnel-Fraunhoffer_Diffraction.jpg}}
-    \caption{Illustration of varying intensity profiles as the projection is placed further from the slit \cite{Near-Far_Field_Diff}.}
+    \caption{Illustration of varying intensity profiles as the projection is placed further from the slit \protect\cite{Near-Far_Field_Diff}.}
     \label{fig:Diffraction-Distinction}
 \end{figure}
 
@@ -405,8 +402,8 @@ Therefrom, Fraunhoffer's approximation is obtained.
     \label{Far Field Approximation}
 \end{equation}
 
-
-It is also possible to rewrite this equation by using the Fourier transform, which is specially useful for MATLAB. Notice how the double integral resembles the 2D Fourier transform definition. By defining the variables $u = \frac{x}{\lambda z}$ and $v = \frac{y}{\lambda z}$, then this double integral can designate the Fourier Transform of some function $f_s(x',y')$
+\newpage
+It is also possible to rewrite this equation by using the Fourier transform, which is specially useful for MATLAB. Notice how the double integral resembles the 2D Fourier transform definition. By defining the variables $u = \frac{x}{\lambda z}$ and $v = \frac{y}{\lambda z}$, then this double integral can designate the Fourier Transform of some function $f_s(x',y')$.
 
 \begin{equation}
     U_0(x,y) = \frac{e^{i\frac{2\pi}{\lambda}}z}{i\lambda z}e^{i\pi \lambda z(x^2+y^2)}F_s(\frac{x}{\lambda z},\frac{y}{\lambda z})
